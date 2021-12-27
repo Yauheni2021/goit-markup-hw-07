@@ -1,0 +1,12 @@
+body {
+  color: $primary-bg-color;
+  background-color: $primary-bg-color;
+  font-family: $current-font;
+  font-size: 14px;
+}
+
+.section-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
