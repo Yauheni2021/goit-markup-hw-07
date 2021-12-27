@@ -47,7 +47,7 @@ body {
   background-color: var(--primary-bg-color);
 }
 
-.container.header {
+.header-container {
   display: flex;
   align-items: center;
 }
@@ -62,11 +62,11 @@ body {
   text-align: center;
 }
 
-.section-list {
+/* .section-list {
   padding: 0;
   margin: 0;
   list-style: none;
-}
+} */
 
 .section-list.nav {
   display: flex;
