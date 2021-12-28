@@ -260,7 +260,7 @@ body {
 
 /* feature */
 
-.thumb {
+.feature-section__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,21 +272,19 @@ body {
 
 }
 
-
-.section-list.feature {
+.feature-section__list {
   display: flex;
   margin: -15px;
 }
 
 
-
-.text {
+.feature-section__item {
   flex-basis: calc((100% -4 * var(--card-set-gap)) / 4);
   margin: 15px;
 }
 
 
-.section-subtitle {
+.feature-section__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14em;
@@ -296,7 +294,8 @@ body {
   margin-bottom: 10px;
 }
 
-.section-text {
+
+.feature-section__text {
   font-size: 14px;
   line-height: 1.71em;
   font-weight: 400;
@@ -305,8 +304,14 @@ body {
   color: var(--primary-text-color);
 }
 
+
 /* проекты */
-.section-title {
+
+.section.projects {
+  padding-top: 0px;
+}
+
+.projects-section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16em;
@@ -317,32 +322,25 @@ body {
   color: var(--title-text-color);
 }
 
-.section.projects {
-  padding-top: 0px;
-}
 
-.section-list.projects {
+.projects-section__list {
   display: flex;
   margin-top: 0;
   margin-left: 0;
 }
 
-.section-item-projects:not(:last-child) {
+
+.projects-section__item:not(:last-child) {
   margin-right: var(--card-set-gap);
 }
 
-/* .image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
 
-.section-item-projects {
+.projects-section__item {
   position: relative;
 
 }
 
-.text-projects {
+.projects-section__text {
   position: absolute;
   display: flex;
   width: 100%;
@@ -362,24 +360,35 @@ body {
 }
 
 
-/*  команда  */
+/*  Команда  */
 
-.section-list.about {
+.section.team {
+  background-color: var(--bg-team-color);
+}
+
+.team-section__list {
   display: flex;
 }
 
-.workteam-list:not(:last-child) {
+.team-section__item:not(:last-child) {
   margin-right: var(--card-set-gap);
 }
 
-.workteam-list {
+.team-section__item {
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.workteam-subtitle {
+.team-section__content {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-section__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18em;
@@ -389,14 +398,10 @@ body {
   color: var(--title-text-color);
 }
 
-.section-content {
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 
-.section-text.worker {
+
+
+.team-section__text {
   font-size: 16px;
   line-height: 1.18em;
   text-align: center;
@@ -405,19 +410,22 @@ body {
   color: var(--primary-text-color);
 }
 
-.section.about {
-  background-color: var(--bg-team-color);
-}
+
+
 
 /* -------social-links------- */
 
-.socials-list {
+.team-social__list {
   display: flex;
   justify-content: center;
 
 }
 
-.socials-link {
+.team-social__item:not(:last-child) {
+  margin-right: 10px;
+} 
+
+.team-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,18 +437,18 @@ body {
   fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+
+
+.team-social__link:hover,
+.team-social__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
   transition: color ;
 }
 
-.socials-item:not(:last-child) {
-  margin-right: 10px;
-}
 
-.social-icon {
+
+.team-social__icon {
   fill: var(--primary-bg-color);
   fill: currentColor;
 }
