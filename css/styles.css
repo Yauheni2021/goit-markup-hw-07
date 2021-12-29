@@ -20,6 +20,8 @@
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 h1,
 h2,
 h3,
@@ -40,6 +42,11 @@ body {
   font-size: 14px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* --------Header-------- */
 
 .page-header {
@@ -52,95 +59,62 @@ body {
   align-items: center;
 }
 
-.container.nav {
-  display: flex;
-  align-items: center;
-}
+/* --------navigation---------- */
 
-.nav {
+.navigation {
   display: flex;
   text-align: center;
-}
-
-/* .section-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-} */
-
-.section-list.nav {
-  display: flex;
-  align-items: center;
-}
-
-.nav-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.section-list.header {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  /* align-items: center; */
-  margin-left: auto;
-}
-
-.link {
-  display: inline-block;
-  padding-bottom: 32px;
-  padding-top: 32px;
-}
-
-.contacts-item  {
-  display: flex;
-  text-align: center;
-}
-
-.contacts-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /*logo*/
-.logo {
+.navigation-section__logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19em;
   letter-spacing: 0.03em;
   text-decoration: none;
-
-  color: var(--accent-color);
-}
-
-.nav .logo {
   padding-bottom: 25px;
   padding-top: 24px;
   margin-right: 94px;
+  color: var(--accent-color);
 }
 
-.logoheader {
+.navigation-section__logoheader {
   color: var(--logo-color);
+
 }
 
-/*шапка*/
-.link {
+
+.navigation-section__list {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--title-text-color);
-  transition: color var(--transition-duration) var(--transition-timing-function);
+  justify-content: center;
+  align-items: baseline;
+  margin-left: auto;
 }
 
-.link::after {
+.navigation-section__item {
+
+}
+
+.navigation-section__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-section__link,
+.contact-list__link {
+  display: inline-block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.navigation-section__link--current {
+  position: relative;
+  color: var(--accent-color);
+}
+
+.navigation-section__link::after {
   content: "";
   display: flex;
   position: absolute;
@@ -155,18 +129,73 @@ body {
     background-color var(--transition-duration)
       var(--transition-timing-function);
 }
-
-.link.current:hover::after,
-.link.current:focus::after {
-  opacity: 1;
+.navigation-section__link {
+  display: block;
+  position: relative;
+  color: var(--title-text-color);
 }
 
-.current::after {
+.navigation-section__link--current:hover::after,
+.navigation-section__link--current:focus::after {
+  opacity: 1;
+}
+.navigation-section__link--current::after {
   content: "";
   opacity: 1;
 }
 
-.icon-link {
+.navigation-section__link--current {
+  color: var(--accent-color);
+}
+
+
+.links {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  text-decoration: none;
+}
+
+.links:hover,
+.links:focus {
+  color: var(--accent-color);
+}
+
+
+/* -------контакты---------- */
+.contact-list {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: auto;
+}
+
+
+.contact-list__item {
+  display: flex;
+  text-align: center;
+}
+
+.contact-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-list__link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.contact-list__icon {
   fill: var(--primary-text-color);
   margin-right: 10px;
   fill: currentColor;
@@ -174,29 +203,13 @@ body {
 
 
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
 
-.current {
-  position: relative;
-  color: var(--accent-color);
+.link.current:hover::after,
+.link.current:focus::after {
+  opacity: 1;
 }
 
 
-.contacts-item .link {
-  color: var(--primary-text-color);
-}
-
-.contacts-item .link:hover,
-.contacts-item .link:focus {
-  color: var(--accent-color);
-}
-
-.contacts-item .link.current {
-  color: var(--accent-color);
-}
 /*герой*/
 
 .section.hero {
@@ -455,13 +468,13 @@ body {
 
 /* ------examples-clients------ */
 
-.examples-list {
+.examples-section__list {
   display: flex;
   align-items: center;
   margin: -15px;
 }
 
-.examples-item {
+.examples-section__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -472,7 +485,7 @@ body {
 }
 
 
-.examples-link {
+.examples-section__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,8 +499,8 @@ body {
   border-color var(--transition-duration) var(--transition-timing-function);
 }
 
-.examples-link:hover,
-.examples-link:focus {
+.examples-section__link:hover,
+.examples-section__link:focus {
 
   fill: var(--accent-color);
   border-color: var(--accent-color);
@@ -495,14 +508,32 @@ body {
 }
 
 /* ---------подвал------------ */
+.footer-section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: var(--secondary-bg-color);
+}
+
 
 .container.footer {
   display: flex;
   align-items: baseline;
 }
 
-.container-address {
+.address-container {
   margin-right: 70px;
+}
+
+.footer-section__logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+  color: var(--accent-color);
 }
 
 .section-footer .logo {
@@ -514,13 +545,9 @@ body {
   margin-bottom: 9px;
 }
 
-.section-footer {
-  padding-bottom: 60px;
-  padding-top: 60px;
-  background-color: var(--secondary-bg-color);
-}
 
-.section-footer .logoheader {
+
+.footer-section__logoheader--accent {
   color: var(--primary-bg-color);
 }
 
