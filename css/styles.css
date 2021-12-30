@@ -232,7 +232,7 @@ body {
   padding-top: 200px;
 }
 
-.hero-title {
+.hero-section__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
@@ -318,13 +318,25 @@ body {
 }
 
 
-/* проекты */
+/* -------------проекты------- */
+
+/* ----Общий стиль подзаголовков h2----- */
+/* .page-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: #212121;
+} */
 
 .section.projects {
   padding-top: 0px;
 }
 
-.projects-section__title {
+.projects-section__title,
+.page-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16em;
@@ -434,7 +446,8 @@ body {
 
 }
 
-.team-social__item:not(:last-child) {
+.team-social__item:not(:last-child),
+.footer-socials__item:not(:last-child) {
   margin-right: 10px;
 } 
 
@@ -461,7 +474,8 @@ body {
 
 
 
-.team-social__icon {
+.team-social__icon,
+.footer-social__icon {
   fill: var(--primary-bg-color);
   fill: currentColor;
 }
@@ -536,19 +550,41 @@ body {
   color: var(--accent-color);
 }
 
-.section-footer .logo {
-  display: block;
-  margin-bottom: 20px;
+.footer-section__logoheader--accent {
+  color: var(--primary-bg-color);
 }
 
-.footer-item:not(:last-child) {
+
+.footer-section__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 
 
-.footer-section__logoheader--accent {
+.footer-section__link--current {
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
   color: var(--primary-bg-color);
+  text-decoration: none;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.footer-section__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: var(--footer-link-color);
+  text-decoration: none;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.footer-section__link:hover,
+.footer-section__link:focus,
+.footer-section__link--current:hover,
+.footer-section__link--current:focus {
+  color: var(--accent-color);
 }
 
 .section-footer .footer-link.current {
@@ -559,27 +595,7 @@ body {
 }
 
 
-.footer-link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71em;
-  letter-spacing: 0.03em;
-  color: var(--footer-link-color);
-  text-decoration: none;
-  transition: color var(--transition-duration) var(--transition-timing-function);
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
-}
-
-.footer-link.current:hover,
-.footer-link.current:focus {
-  color: var(--accent-color);
-}
-
-.footer-thumb {
+.footer-social__thumb {
   display: block;
   margin-right: auto;
   width: 206px;
@@ -587,7 +603,8 @@ body {
 
 }
 
-.footer-text {
+.footer-social__text,
+.footer-form__text {
   display: block;
   font-size: 14px;
   line-height: 1.14;
@@ -596,9 +613,19 @@ body {
   text-transform: uppercase;
 }
 
-.social-list.footer {
+.footer-social__list {
   display: flex;
 
+}
+
+.footer-socials__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-bg-color);
+}
+
+.footer-socials__link:hover,
+.footer-socials__link:focus {
+  background-color: var(--accent-color);
 }
 
 .socials-link.footer {
@@ -611,13 +638,13 @@ body {
   background-color: var(--accent-color);
 }
 
-/* кнопка футера */
+/* ----------форма футера----------- */
 
 .footer-form {
   display: flex;
 }
 
-.footer-input {
+.footer-form__input {
   padding: 15px 16px;
   color: var(--footer-link-color);
   width: 358px;
@@ -629,13 +656,13 @@ body {
   transition: border var(--transition-duration) var(--transition-timing-function);
 }
 
-.footer-input:focus {
+.footer-form__input:focus {
   border-color: var(--accent-color);
 }
 
 
 
-.footer-button {
+.footer-form__button {
   display: inline-flex;
   padding: 10px 28px;
   margin-left: 12px;
@@ -653,7 +680,7 @@ body {
   border: 0;
 }
 
-.icon-send {
+.footer-form__icon--send {
   margin-left: 10px;
   align-items: center;
   fill: currentColor;
