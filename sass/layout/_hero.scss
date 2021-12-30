@@ -1,4 +1,4 @@
-.section.hero {
+.hero.section {
   background-color: var(--secondary-bg-color);
   background-image: linear-gradient(
     to right,
@@ -18,7 +18,12 @@
   padding-top: 200px;
 }
 
-.hero-title {
+.hero.container {
+  display: flex;
+  max-width: 696px;
+}
+
+.hero-section__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
@@ -29,12 +34,9 @@
   color: var(--primary-bg-color);
 }
 
-.container.hero {
-  display: flex;
-  max-width: 696px;
-}
 
-.hero-button {
+
+.hero-section__button {
   display: inline-block;
   padding: 10px 32px;
   font-weight: 700;
@@ -51,8 +53,8 @@
   border: 0;
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero-section__button:hover,
+.hero-section__button:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
 }
