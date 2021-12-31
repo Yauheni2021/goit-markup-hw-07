@@ -75,25 +75,6 @@ body {
   text-align: center;
 }
 
-/*logo*/
-.navigation-section__logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19em;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  padding-bottom: 25px;
-  padding-top: 24px;
-  margin-right: 94px;
-  color: var(--accent-color);
-}
-
-.navigation-section__logoheader {
-  color: var(--logo-color);
-
-}
-
 
 /* 
 .links {
@@ -269,11 +250,11 @@ body {
 
 
 /* -------------проекты------- */
-
+/* 
 .section.projects {
   padding-top: 0px;
 }
-/* ----Общий стиль подзаголовков h2----- */
+
 .projects-section__title,
 .page-title {
   font-weight: 700;
@@ -321,12 +302,12 @@ body {
   text-transform: uppercase;
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--primary-bg-color);
-}
+} */
 
 
 /*  Команда  */
 
-.section.team {
+/* .section.team {
   background-color: var(--bg-team-color);
 }
 
@@ -372,14 +353,14 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 16px;
   color: var(--primary-text-color);
-}
+} */
 
 
 
 
 /* -------social-links------- */
 
-.team-social__list {
+/* .team-social__list {
   display: flex;
   justify-content: center;
 
@@ -410,14 +391,13 @@ body {
 
 
 
-.team-social__icon,
-.footer-social__icon {
+.team-social__icon {
   fill: var(--primary-bg-color);
   fill: currentColor;
-}
+} */
 
 /* ------examples-clients------ */
-
+/* 
 .examples-section__list {
   display: flex;
   align-items: center;
@@ -455,10 +435,10 @@ body {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 
-}
+} */
 
 /* ---------подвал------------ */
-.footer-section {
+/* .footer-section {
   padding-bottom: 60px;
   padding-top: 60px;
   background-color: var(--secondary-bg-color);
@@ -473,23 +453,6 @@ body {
 .address-container {
   margin-right: 70px;
 }
-
-.footer-section__logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19em;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 20px;
-  color: var(--accent-color);
-}
-
-.footer-section__logoheader--accent {
-  color: var(--primary-bg-color);
-}
-
 
 .footer-section__item:not(:last-child) {
   margin-bottom: 9px;
@@ -528,7 +491,7 @@ body {
   line-height: 1.71em;
   letter-spacing: 0.03em;
   color: var(--primary-bg-color);
-}
+} */
 
 
 .footer-social__thumb {
