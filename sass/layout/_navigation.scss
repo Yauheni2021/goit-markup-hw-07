@@ -4,6 +4,7 @@
 }
 
 .navigation-section__list {
+  @extend %list;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,5 +64,21 @@
 }
 
 .navigation-section__link--current {
+  color: $accent-color;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  transition: color $transition-duration $transition-timing-function;
+  text-decoration: none;
+}
+
+.links:hover,
+.links:focus {
   color: $accent-color;
 }
