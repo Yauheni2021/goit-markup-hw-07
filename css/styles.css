@@ -1,4 +1,24 @@
-
+:root {
+  --main-bg-color: #e5e5e5;
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+  --logo-color: #000000;
+  --link-color: #c4c4c4;
+  --bg-button-color: #188ce8;
+  --bg-team-color: #f5f4fa;
+  --cards-border: #eeeeee;
+  --social-link-color:#AFB1B8;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --btn-shadow-color: rgba(0, 0, 0, 0.15);
+  --bg-cards-overlay: rgba(33, 150, 243, 0.9);
+  --border-input-color:rgba(33, 33, 33, 0.2);
+  --card-set-gap: 30px;
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .image {
   display: block;
@@ -19,7 +39,12 @@ ul {
   list-style: none;
 }
 
-
+body {
+  color: var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
 
 /* .section {
   padding-top: 94px;
@@ -31,6 +56,11 @@ ul {
 .page-header {
   border-bottom: 1px solid #ececec;
   background-color: var(--primary-bg-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  margin: 0 auto;
 }
 
 .header-container {
@@ -143,7 +173,7 @@ ul {
 
 
 /* -------контакты---------- */
-.contact-list {
+/* .contact-list {
   display: inline-flex;
   justify-content: center;
   align-items: baseline;
@@ -184,7 +214,7 @@ ul {
 .link.current:hover::after,
 .link.current:focus::after {
   opacity: 1;
-}
+} */
 
 
 /*герой*/
@@ -1072,11 +1102,11 @@ input:-webkit-autofill:active {
 
 
 /* контейнер */
-/* .container {
+.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-} */
+}
 
