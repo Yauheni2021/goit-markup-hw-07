@@ -7,8 +7,8 @@
   z-index: 2;
   opacity: 1;
   background-color: $backdrop-background-color;
-  transition: opacity var(--transition-duration) var(--transition-timing-function),
-  visibility var(--transition-duration) ;
+  transition: opacity $transition-duration $transition-timing-function,
+  visibility $transition-duration;
   &--is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -22,7 +22,7 @@
   left: 50%;
   width: 528px;
   min-height: 581px;
-  background-color: var(--primary-bg-color);
+  background-color: $primary-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;

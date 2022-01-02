@@ -12,25 +12,16 @@
   margin-left: auto;
 }
 
-
 .navigation-section__item:not(:last-child) {
   margin-right: 50px;
 }
 
 .navigation-section__link,
 .contact-list__link {
+  @extend %link;
   display: inline-block;
   padding-bottom: 32px;
   padding-top: 32px;
-}
-
-.navigation-section__link--current {
-  position: relative;
-  color: $accent-color;
-}
-
-.navigation-section__link {
-  @extend %link;
 }
 
 .navigation-section__link::after {
@@ -47,38 +38,40 @@
       $transition-timing-function,
     background-color $transition-duration
       $transition-timing-function;
+      
 }
+
 .navigation-section__link {
   display: block;
   position: relative;
   color: $title-text-color;
-}
 
-.navigation-section__link--current:hover::after,
-.navigation-section__link--current:focus::after {
-  opacity: 1;
-}
-.navigation-section__link--current::after {
-  content: "";
-  opacity: 1;
-}
-
-.navigation-section__link--current {
-  color: $accent-color;
+  &--current:hover::after,
+  &--current:focus::after {
+    content: "";
+    opacity: 1;
+  }
+  &--current::after {
+    opacity: 1;
+  }
+  &--current {
+    position: relative;
+    color: $accent-color;
+  }
 }
 
 .links {
+  @extend %link;
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
   transition: color $transition-duration $transition-timing-function;
-  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.links:hover,
-.links:focus {
-  color: $accent-color;
-}

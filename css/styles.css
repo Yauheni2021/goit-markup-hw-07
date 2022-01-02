@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --main-bg-color: #e5e5e5;
   --title-text-color: #212121;
   --primary-text-color: #757575;
@@ -18,7 +18,7 @@
   --card-set-gap: 30px;
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* .image {
   display: block;
@@ -53,7 +53,7 @@ body {
 
 /* --------Header-------- */
 
-.page-header {
+/* .page-header {
   border-bottom: 1px solid #ececec;
   background-color: var(--primary-bg-color);
   position: fixed;
@@ -66,14 +66,14 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-}
+} */
 
 /* --------navigation---------- */
 
-.navigation {
+/* .navigation {
   display: flex;
   text-align: center;
-}
+} */
 
 
 /* 
@@ -812,7 +812,7 @@ body {
   border-radius: 4px;
   border: 0;
 } */
-
+/* 
 .feedback {
   display: flex;
   flex-direction: column;
@@ -826,10 +826,10 @@ body {
   margin-bottom: 12px;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
+} */
 
 /* -------------Бэкграунд инпут------------------- */
-input:-webkit-autofill,
+/* input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
@@ -1010,7 +1010,7 @@ input:-webkit-autofill:active {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
+ */
 
 
 /* контейнер */

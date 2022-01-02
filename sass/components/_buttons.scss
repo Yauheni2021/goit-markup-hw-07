@@ -20,6 +20,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  margin-top: 94px;
 }
 
 .filter-btn__items:not(:last-child) {
@@ -33,7 +34,6 @@
   line-height: 1.62em;
   font-family: inherit;
   text-align: center;
-  letter-spacing: 0.03em;
   cursor: pointer;
   padding: 6px 22px;
   border: none;
