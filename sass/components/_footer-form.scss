@@ -4,21 +4,18 @@
 
 .footer-form__input {
   padding: 15px 16px;
-  color: var(--footer-link-color);
+  color: $footer-link-color;
   width: 358px;
   height: 50px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  background-color: var(--secondary-bg-color);
+  background-color: $secondary-bg-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  transition: border var(--transition-duration) var(--transition-timing-function);
+  transition: border $transition-duration $transition-timing-function;
+  &:focus {
+    border-color: $accent-color;
+  }
 }
-
-.footer-form__input:focus {
-  border-color: var(--accent-color);
-}
-
-
 
 .footer-form__button {
   display: inline-flex;
@@ -30,10 +27,10 @@
   align-items: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  color: var(--primary-bg-color);
+  color: $primary-bg-color;
   min-width: 200px;
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px var(--btn-shadow-color);
+  background: $accent-color;
+  box-shadow: 0px 4px 4px $btn-shadow-color;
   border-radius: 4px;
   border: 0;
 }

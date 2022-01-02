@@ -494,7 +494,7 @@ body {
 } */
 
 
-.footer-social__thumb {
+/* .footer-social__thumb {
   display: block;
   margin-right: auto;
   width: 206px;
@@ -538,12 +538,12 @@ body {
 .socials__link:hover,
 .socials__link:focus {
   background-color: var(--accent-color);
-}
+} */
 
 
 /* ----------форма футера----------- */
 
-.footer-form {
+/* .footer-form {
   display: flex;
 }
 
@@ -587,11 +587,11 @@ body {
   margin-left: 10px;
   align-items: center;
   fill: currentColor;
-}
+} */
 
 /* портфолио */
 /* кнопки фильтров */
-
+/* 
 .filter-btn__list{
   display: flex;
   justify-content: center;
@@ -638,19 +638,13 @@ body {
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
-}
+} */
 
 
 
 /* карточки */
 
-.section-list.cards {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: var(--primary-bg-color);
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
-}
+/* 
 
 .cards-section__list {
   display: flex;
@@ -665,13 +659,13 @@ body {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-}
+} */
 
-.cards-section__link:hover .cards-overlay__text,
+/* .cards-section__link:hover .cards-overlay__text,
 .cards-section__link:focus .cards-overlay__text {
   transform: translateY(0);
-}
-
+} */
+/* 
 .cards-section__link {
   display: block;
   text-decoration: none;
@@ -684,9 +678,9 @@ body {
   border: 1px solid var(--cards-border);
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
-.cards-overlay {
+/* .cards-overlay {
   position: relative;
   overflow: hidden;
 }
@@ -708,9 +702,9 @@ body {
   transform: translateY(101%);
   transition: transform var(--transition-duration) 
   var(--transition-timing-function);
-}
+} */
 
-
+/* 
 .cards-section__title {
   font-weight: 700;
   font-size: 18px;
@@ -735,7 +729,7 @@ body {
   border-right: 1px solid var(--cards-border);
   border-bottom: 1px solid var(--cards-border);
   border-left: 1px solid var(--cards-border);
-}
+} */
 
 /* ------------Modal---------------- */
 
