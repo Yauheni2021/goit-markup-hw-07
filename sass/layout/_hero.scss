@@ -1,4 +1,4 @@
-.hero.section {
+.hero-section {
   background-color: $secondary-bg-color;
   background-image: linear-gradient(
     to right,
@@ -16,11 +16,6 @@
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
-}
-
-.hero.container {
-  display: flex;
-  max-width: 696px;
 }
 
 .hero-section__title {
