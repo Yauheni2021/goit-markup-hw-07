@@ -1,8 +1,8 @@
-.footer-form {
+.form__thumb {
   display: flex;
 }
 
-.footer-form__input {
+.form__input {
   padding: 15px 16px;
   color: $footer-link-color;
   width: 358px;
@@ -19,7 +19,7 @@
 
 
 
-.footer-form__icon--send {
+.form__icon--send {
   margin-left: 10px;
   align-items: center;
   fill: currentColor;
